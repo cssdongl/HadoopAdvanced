@@ -10,6 +10,3 @@ buildNumber.properties
 src/main/java/conf
 .idea/
 HadoopAdvance.iml
-
-pom.xml
-src/main/java/org/ldong/hadoop/secondarySort/scala/
