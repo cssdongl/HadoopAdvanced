@@ -39,6 +39,7 @@ public class SecondarySortJob extends Configured implements Tool {
         job.setReducerClass(SecondarySortReducer.class);
         job.setPartitionerClass(DateTempraturePartioner.class);
         job.setGroupingComparatorClass(DateYearMonthGrouper.class);
+        job.setNumReduceTasks(1);
 
         int result = job.waitForCompletion(true) ? 0 : 1;
 
